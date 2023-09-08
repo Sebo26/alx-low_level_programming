@@ -14,13 +14,13 @@ char u;
 
 for (l = 'a'; l < 'z'; l++)
 {
-	putchar('l');
+	putchar(l);
 }
-for (u = 'a'; u < 'z'; u++)
+for (u = 'A'; u < 'Z'; u++)
 {
-	putchar('u');
-	putchar('\n');
+	putchar(u);
 }
+putchar('\n');
 
 return (0);
 }
