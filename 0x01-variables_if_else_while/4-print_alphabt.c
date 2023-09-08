@@ -17,7 +17,7 @@ if (l == 'q' && l == 'e')
 {
 	putchar(' ');
 }
-	putchar('l');
+	putchar(l);
 }
 
 return (0);
