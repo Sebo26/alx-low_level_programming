@@ -15,7 +15,7 @@ int m;
 for (n = 0; n < 10; n++)
 {
 	putchar('0' + n);
-while (m < n)
+while (m <= n)
 {
 	putchar(',');
 	putchar(' ');
