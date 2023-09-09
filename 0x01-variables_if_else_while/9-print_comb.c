@@ -15,10 +15,11 @@ int m;
 for (n = 0; n < 10; n++)
 {
 	putchar('0' + n);
-for (m = 0; m < 9; m++)
+while (m < n)
 {
 	putchar(',');
 	putchar(' ');
+	m++;
 }
 }
 
