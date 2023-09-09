@@ -10,7 +10,7 @@
 int main(void)
 {
 int n;
-char m;
+int m;
 
 for (n = 0; n < 10; n++)
 {
