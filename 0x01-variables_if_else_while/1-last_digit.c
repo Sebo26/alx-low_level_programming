@@ -2,13 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main – Entry point
-*
-* Description: Checks if the last digit of a randomly generated number is
-* greater than 5, equal to zero or less than 6 but not equal to zero.
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Description: Checks if the last digit of a randomly generated number is
+ * greater than 5, equal to zero or less than 6 but not equal to zero.
+ *
+ * Return: Always 0 (Success)
+ * */
 
 int main(void)
 {
