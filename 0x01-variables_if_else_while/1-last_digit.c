@@ -8,7 +8,7 @@
  * greater than 5, equal to zero or less than 6 but not equal to zero.
  *
  * Return: Always 0 (Success)
- * */
+ */
 
 int main(void)
 {
