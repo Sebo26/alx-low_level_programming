@@ -18,7 +18,6 @@ if (n < 9)
 {
 	putchar(',');
 	putchar(' ');
-	m++;
 }
 }
 
