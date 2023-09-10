@@ -18,6 +18,6 @@ if (l != 'q' && l != 'e')
 	putchar(l);
 }
 }
-
+putchar('\n');
 return (0);
 }
