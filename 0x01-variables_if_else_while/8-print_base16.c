@@ -14,11 +14,11 @@ char h;
 
 for (hex = 0; hex <= 9; hex++)
 {
+	putchar(hex);
+}
 for (h = 'a'; h <= 'f'; h++)
 {
 	putchar(h);
-}
-	putchar(hex);
 }
 
 return (0);
