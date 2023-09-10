@@ -18,11 +18,8 @@ for (n = 0; n < 9; n++)
 for (m = 1; m <= 9; m++)
 {
 	putchar(m);
-if (m < n)
-{
 	putchar(',');
 	putchar(' ');
-}
 }
 }
 
