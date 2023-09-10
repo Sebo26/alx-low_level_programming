@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-char hex;
+int hex;
 char h;
 
 for (hex = 0; hex <= 9; hex++)
@@ -20,6 +20,7 @@ for (h = 'a'; h <= 'f'; h++)
 {
 	putchar(h);
 }
+putchar('\n');
 
 return (0);
 }
