@@ -10,15 +10,10 @@
 int main(void)
 {
 int hex;
-char h;
 
-for (hex = 0; hex <= 9; hex++)
+for (hex = 0; hex <= 16; hex++)
 {
-	putchar(hex);
-}
-for (h = 'a'; h <= 'f'; h++)
-{
-	putchar(h);
+	putchar("%x",hex);
 }
 putchar('\n');
 
