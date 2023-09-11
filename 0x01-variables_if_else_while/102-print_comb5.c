@@ -17,16 +17,15 @@ for (n = 0; n < 9; n++)
 {
 for (m = n + 1; m <= 9; m++)
 {
-	putchar('0' + n);
-	putchar('0' + m);
-	putchar(' ');
 for (l = 0; l <= 9; l++)
 {
 for (k = l + 1; k <= 9; k++)
 {
+	putchar('0' + n);
+	putchar('0' + m);
+	putchar(' ');
 	putchar('0' + l);
-	putchar('0' + k);
-	
+	putchar('0' + k);	
 if (n != 9 || k != 9)
 {
 	putchar(',');
