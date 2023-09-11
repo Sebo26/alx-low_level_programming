@@ -21,6 +21,8 @@ for (l = 0; l <= 9; l++)
 {
 for (k = 1; k <= 9; k++)
 {
+if (l != k)
+{
 	putchar('0' + n);
 	putchar('0' + m);
 	putchar(' ');
@@ -30,6 +32,7 @@ if (n != 9 || k != 9)
 {
 	putchar(',');
 	putchar(' ');
+}
 }
 }
 }
