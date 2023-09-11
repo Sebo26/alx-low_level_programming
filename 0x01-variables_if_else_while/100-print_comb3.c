@@ -18,11 +18,11 @@ for (m = n + 1; m <= 9; m++)
 {
 	putchar('0' + n);
 	putchar('0' + m);
-}
 if (m < 9)
 {
 	putchar(',');
 	putchar(' ');
+}
 }
 }
 
