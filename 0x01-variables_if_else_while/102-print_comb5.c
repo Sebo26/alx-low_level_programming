@@ -19,7 +19,7 @@ for (m = n + 1; m <= 9; m++)
 {
 for (l = 0; l <= 9; l++)
 {
-for (k = l + 1; k <= 9; k++)
+for (k = 0; k <= 9; k++)
 {
 	putchar('0' + n);
 	putchar('0' + m);
