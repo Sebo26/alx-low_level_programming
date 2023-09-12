@@ -1,13 +1,21 @@
-#ifndef MAIN-HEADER_file
-#define MAIN-HEADER_file
-void function_putchar()
-{
-	printf("_putchar\n");
-}
+#ifndef MAIN_HEADER_file
+#define MAIN_HEADER_file
+void print_alphabet(void);
+void function_putchar(void);
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
+int print_last_digit(int);
+void jack_bauer(void);
+void times_table(void);
+int add(int, int);
+void print_to_98(int n);
 #endif
 
-#ifndef MAIN-HEADER_file
-#define MAIN-HEADER_file
+#ifndef MAIN_HEADER_file
+#define MAIN_HEADER_file
 #include <unistd.h>
 
 /**
@@ -20,18 +28,5 @@ void function_putchar()
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
-}
-#endif
-
-#ifndef MAIN-HEADER_file
-#define MAIN-HEADER_file
-void print_alphabet(void)
-{
-char a;
-for (a = 'a'; a <= 'z'; a++)
-{
-        putchar(a);
-        putchar('\n');
-}
 }
 #endif

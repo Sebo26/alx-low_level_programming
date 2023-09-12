@@ -16,16 +16,3 @@ for (a = 'a'; a <= 'z'; a++)
 	putchar('\n');
 }
 }
-/**
- * main - Entry point
- *
- * Description: Calls print_alphabet to print the alphabet followed by
- * a new line.
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
