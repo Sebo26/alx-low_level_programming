@@ -22,3 +22,16 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 #endif
+
+#ifndef MAIN-HEADER_file
+#define MAIN-HEADER_file
+void print_alphabet(void)
+{
+char a;
+for (a = 'a'; a <= 'z'; a++)
+{
+        putchar(a);
+        putchar('\n');
+}
+}
+#endif
