@@ -1,5 +1,7 @@
 #ifndef MAIN_HEADER_file
 #define MAIN_HEADER_file
+
+int _putchar(char c);
 void print_alphabet(void);
 void function_putchar(void);
 void print_alphabet_x10(void);
@@ -12,21 +14,5 @@ void jack_bauer(void);
 void times_table(void);
 int add(int, int);
 void print_to_98(int n);
-#endif
 
-#ifndef MAIN_HEADER_file
-#define MAIN_HEADER_file
-#include <unistd.h>
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 #endif
