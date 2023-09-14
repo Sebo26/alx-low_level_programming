@@ -9,7 +9,6 @@
 void print_to_98(int n)
 {
 int i;
-printf("Start from %d\n", n);
 for (i = n; i <= 98; i++)
 {
 	printf("%d", i);
@@ -19,4 +18,13 @@ for (i = n; i <= 98; i++)
 		_putchar(' ');
 	}
 }
+}
+
+int main(void)
+{
+int n;
+scanf("%d", &n);
+print_to_98(n);
+
+return (0);
 }
