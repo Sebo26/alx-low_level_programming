@@ -19,12 +19,3 @@ for (i = n; i <= 98; i++)
 	}
 }
 }
-
-int main(void)
-{
-int n;
-scanf("%d", &n);
-print_to_98(n);
-
-return (0);
-}
