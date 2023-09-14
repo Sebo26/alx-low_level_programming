@@ -5,13 +5,13 @@
  *
  * @a: The first integer
  * @b: The second integer
- * Return: Always 0
+ * Return: m (The result of the multiplication)
  */
 int mul(int a, int b)
 {
 int m;
 m = a * b;
-_putchar(m);
+_putchar('0' + m);
 
-return (0);
+return (m);
 }
