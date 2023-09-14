@@ -9,10 +9,10 @@
 void print_to_98(int n)
 {
 int i;
-printf("Start from %d", n);
+printf("Start from %d\n", n);
 for (i = n; i <= 98; i++)
 {
-	_putchar ('0' + i);
+	printf("%d", i);
 	if (i != 98)
 	{
 		_putchar(',');
