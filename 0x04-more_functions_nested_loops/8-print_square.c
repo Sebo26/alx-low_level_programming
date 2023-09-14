@@ -8,6 +8,23 @@
  */
 void print_square(int size)
 {
+int m;
+int n;
 if (size > 0)
 {
-	for (size = 0; 
+	while (m == size)
+	{
+		while (n == size)
+		{
+			_putchar ('#');
+			n++;
+		}
+	_putchar ('\n');
+	m++;
+	}
+}
+else
+{
+_putchar ('\n');
+}
+}
