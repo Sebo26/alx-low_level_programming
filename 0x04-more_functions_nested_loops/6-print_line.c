@@ -13,14 +13,12 @@ if (n > 0)
 	{
 		_putchar ('_');
 	}
-	_putchar ('\\');
-	_putchar ('n');
+	_putchar ('$');
 	_putchar ('\n');
 }
 else
 {
-	_putchar ('\\');
-	_putchar ('n');
+	_putchar ('$');
 	_putchar ('\n');
 }
 }
