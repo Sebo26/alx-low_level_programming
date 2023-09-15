@@ -14,10 +14,9 @@ if (size > 0)
 {
 	while (m <= size)
 	{
-		while (n <= size)
+		for (n = 1; n <= size; n++)
 		{
 			_putchar ('#');
-			n++;
 		}
 	_putchar ('\n');
 	m++;
