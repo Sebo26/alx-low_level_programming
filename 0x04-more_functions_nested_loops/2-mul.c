@@ -13,5 +13,5 @@ int m;
 m = a * b;
 _putchar('0' + m);
 
-return (m);
+return m;
 }
