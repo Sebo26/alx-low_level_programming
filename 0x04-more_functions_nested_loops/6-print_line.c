@@ -12,9 +12,9 @@ if (n > 0)
 	for (m = 1; m < n; m++)
 	{
 		_putchar ('_');
-		_putchar ('\\');
-		_putchar ('n');
 	}
+	_putchar ('\\');
+	_putchar ('n');
 }
 else
 {
