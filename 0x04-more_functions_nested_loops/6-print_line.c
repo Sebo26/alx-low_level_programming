@@ -15,10 +15,12 @@ if (n > 0)
 	}
 	_putchar ('\\');
 	_putchar ('n');
+	_putchar ('\n');
 }
 else
 {
 	_putchar ('\\');
 	_putchar ('n');
+	_putchar ('\n');
 }
 }
