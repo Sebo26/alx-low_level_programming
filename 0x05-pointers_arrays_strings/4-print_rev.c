@@ -8,15 +8,11 @@
 void print_rev(char *s)
 {
 int i;
-char temp;
 int l = strlen(s);
-int midpoint = l / 2;
 
-for (i = 0; i < midpoint; i++)
+for (i = l; i >= 0; i++)
 {
-	temp = s[i];
-	s[i] = s[l - i - 1];
-	s[l - i - 1] = temp;
+	_putchar(s[i]);
 }
 _putchar('\n');
 }
