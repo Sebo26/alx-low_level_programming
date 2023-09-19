@@ -9,5 +9,6 @@
 int _atoi(char *s)
 {
 int m = atoi(s);
+
 return (m);
 }
