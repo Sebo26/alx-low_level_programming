@@ -11,7 +11,7 @@ int i;
 int l = strlen(str);
 int midpoint = l / 2;
 
-for (i = midpoint; i <= l; i++)
+for (i = midpoint; i < l; i++)
 {
 	_putchar(str[i]);
 	if (l % 2 != 0)
