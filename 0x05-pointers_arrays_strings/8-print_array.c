@@ -14,7 +14,7 @@ for (i = 0; i <= n; n++)
 	printf("s[%u] = ", n);
 	while (n != '\0')
 	{
-		printf("%d", a);
+		printf("%d", a[i]);
 	}
 }
 }
