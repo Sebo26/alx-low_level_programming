@@ -10,20 +10,20 @@ int l;
 int m;
 if (n > 0)
 {
-	while (l < n)
+	for (l = 1; l <= n; ++l)
 	{
-		l++;
-	for (m = 1; m < n; m++)
+	for (m = 1; m <= l; m++)
 	{
 		_putchar ('\\');
-		_putchar ('\\');
-		_putchar ('n');
+		_putchar ('$');
+		_putchar ('\n');
 	}
+	_putchar ('\n');
 	}
 }
 else
 {
-	_putchar ('\\');
-	_putchar ('n');
+	_putchar ('$');
+	_putchar ('\n');
 }
 }

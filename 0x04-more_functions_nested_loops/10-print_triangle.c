@@ -11,15 +11,13 @@ int m;
 int n;
 if (size > 0)
 {
-	while (m == size)
+	for (m = 1; m <= size; m++)
 	{
-		while (n > 1 && n == size)
+		for (n = size; n >=1; n++)
 		{
 			_putchar ('#');
-			n++;
 		}
 	_putchar ('\n');
-	m++;
 	}
 }
 else

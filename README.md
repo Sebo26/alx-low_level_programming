@@ -1,1 +1,1 @@
-Debugging given code
+More pointers, arrays and strings
