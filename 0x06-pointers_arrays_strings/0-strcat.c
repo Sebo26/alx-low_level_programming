@@ -9,7 +9,7 @@
  * Return: *dest (pointer to the resulting string)
  */
 char *_strcat(char *dest, char *src)
-{ 
+{
 strcat(dest, src);
 
 return (dest);
