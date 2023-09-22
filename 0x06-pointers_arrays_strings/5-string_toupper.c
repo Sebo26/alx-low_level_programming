@@ -14,7 +14,10 @@ length = strlen(s);
 int i;
 for (i = 0; i < length; i++)
 {
-	char s[i] = toupper(s[i]);
+	if (islower(s[i]))
+	{
+	s[i] = toupper(s[i]);
+	}
 }
 return (s);
 }

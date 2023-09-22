@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * reverse_array - The function reverses the content of an array of integers.
@@ -18,4 +17,5 @@ for (i = n - 1; i >= 0; i--)
 	_putchar(' ');
 	}
 }
+_putchar('\n');
 }
