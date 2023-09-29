@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt_recursion - The function squares numbers 1 and upwards until = n.
+ * help_sqrt_recursion - The function squares numbers 1 and upwards until = n.
  * @i: number that will be squared to get n (iterator)
  * @n: the number that will have its square root determined.
  * Return: Square root.
