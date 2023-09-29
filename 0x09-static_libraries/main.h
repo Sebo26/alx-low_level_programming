@@ -1,5 +1,7 @@
 #ifndef MAIN_HEADER
 #define MAIN_HEADER
+#include <string.h>
+#include <stdio.h>
 
 int _putchar(char c);
 int _islower(int c);
