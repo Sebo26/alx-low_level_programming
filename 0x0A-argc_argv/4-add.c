@@ -17,9 +17,9 @@ if (argc == 1)
 {
 	printf("0\n");
 }
-for (i = 0; i <= argc; i++)
+if (isdigit(atoi(argv[i])) == 0)
 {
-	if (isdigit(atoi(argv[i])) == 0)
+	for (i = 0; i <= argc; i++)
 	{
 		sum = sum + atoi(argv[i]);
 		printf("%d\n", sum);
@@ -29,6 +29,6 @@ for (i = 0; i <= argc; i++)
 		printf("Error\n");
 		return (1);
 	}
-return (0);
 }
+return (0);
 }
