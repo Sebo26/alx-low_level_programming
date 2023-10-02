@@ -5,7 +5,8 @@
  * main - Entry point
  * Description: Prints the number of arguments passed in the program.
  * @argc: The number of arguments in program.
- * Return:  (Success)
+ * @argv: The content of the program (unused)
+ * Return: 0 (Success)
  */
 int main(int argc, char **argv __attribute__((unused)))
 {
