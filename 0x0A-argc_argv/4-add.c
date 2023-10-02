@@ -22,7 +22,6 @@ if (isdigit(atoi(argv[i])) == 0)
 	for (i = 0; i <= argc; i++)
 	{
 		sum = sum + atoi(argv[i]);
-		printf("%d\n", sum);
 	}
 	else if (isdigit(atoi(argv[i])) != 0)
 	{
@@ -30,5 +29,6 @@ if (isdigit(atoi(argv[i])) == 0)
 		return (1);
 	}
 }
+printf("%d\n", sum);
 return (0);
 }
