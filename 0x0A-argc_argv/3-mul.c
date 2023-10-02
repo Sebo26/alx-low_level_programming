@@ -14,10 +14,10 @@ int main(int argc, char **argv)
 int multiplication;
 if (argc == 3)
 {
-	multiplication = atoi(argv[2]) * atoi(argv[3]);
+	multiplication = atoi(argv[1]) * atoi(argv[2]);
 	printf("%d\n", multiplication);
 }
-else
+else if (argc < 3)
 {
 	printf("Error");
 	return (1);
