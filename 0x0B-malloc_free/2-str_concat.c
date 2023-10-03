@@ -12,6 +12,7 @@ char *str_concat(char *s1, char *s2)
 char *string;
 int length;
 int n;
+int i;
 
 if (s1 == NULL || s2 == NULL)
 {
@@ -25,9 +26,15 @@ if (string == NULL)
 {
 	return (NULL);
 }
-for (n = 0; n < length; n++)
+
+for (i = 0; s1[i] != '\0'; i++)
 {
-	string[n] = s1[n] + s2[n];
+	string[i] = s1[i];
+}
+
+for (n = 0; s2[n] != '\0'; n++)
+{
+	string[i + n] = s2[n];
 }
 string[length] = '\0';
 return (string);
