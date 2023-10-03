@@ -23,8 +23,9 @@ if (size != 0)
 	}
 	return (array);
 }
-else
+else if (size == 0 || array == NULL)
 {
 	return (NULL);
 }
+return (array);
 }
