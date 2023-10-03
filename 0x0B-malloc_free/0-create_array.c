@@ -28,4 +28,5 @@ else if (size == 0 || array == NULL)
 	return (NULL);
 }
 return (array);
+free(array);
 }
