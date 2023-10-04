@@ -30,5 +30,5 @@ if (string == NULL)
 	return (NULL);
 }
 string[length] = '\0';
-return (args);
+return (string);
 }
