@@ -22,6 +22,7 @@ if (ac == 0 || av == NULL)
 for (i = 0; i != '\0'; i++)
 {
 	length += strlen(av[i]) + 1;
+	strcpy(av[i], av[ac + 1]);
 }
 string = (char *) malloc((length + 1) * sizeof(char));
 
