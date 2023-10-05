@@ -8,4 +8,13 @@
  */
 void *malloc_checked(unsigned int b)
 {
+int *memory;
 
+memory = malloc(sizeof(b));
+if (memory == NULL)
+{
+	exit(98);
+}
+
+return (memory);
+}
