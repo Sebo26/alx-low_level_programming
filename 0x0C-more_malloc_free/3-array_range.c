@@ -29,5 +29,6 @@ for (i = min; i <= max; i++)
 {
 	arr[i] = min + i;
 }
+free (arr);
 return (arr);
 }
