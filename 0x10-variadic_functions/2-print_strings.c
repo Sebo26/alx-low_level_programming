@@ -14,7 +14,7 @@ va_list ap;
 
 if (n == 0)
 {
-	printf("(nil)");
+	printf("nil");
 }
 
 va_start(ap, n);
