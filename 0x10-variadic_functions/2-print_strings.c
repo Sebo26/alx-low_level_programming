@@ -12,9 +12,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 unsigned int i;
 va_list ap;
 
-if (n == 0)
+if (va_arg(ap, char*) == NULL)
 {
-	printf("nil");
+	printf("(nil)");
 }
 
 va_start(ap, n);
