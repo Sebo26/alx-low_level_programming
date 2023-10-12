@@ -12,7 +12,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 unsigned int i;
 va_list ap;
 
-if (va_arg(ap, char*) == NULL)
+if (n == 0)
 {
 	printf("(nil)");
 }
