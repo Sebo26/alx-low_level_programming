@@ -14,19 +14,21 @@ va_list ap;
 
 if (n == 0)
 {
-        printf("(nil)");
+	printf("(nil)");
 }
 
-va_start(ap, n)
+va_start(ap, n);
 for (i = 0; i < n; i++)
 {
 	printf("%s", va_arg(ap, char *));
 	if (i < n - 1 && separator != NULL)
-        {
-                printf("%s", separator);
-        }
-(void)i;
-(void)separator;
+	{
+		printf("%s", separator);
+	}
+	else
+	{
+		printf("%s%s", separator, va_arg(ap, char *));
+	}
 }
 
 va_end(ap);
