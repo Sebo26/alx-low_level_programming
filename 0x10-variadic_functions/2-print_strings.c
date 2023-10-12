@@ -25,10 +25,6 @@ for (i = 0; i < n; i++)
 	{
 		printf("%s", separator);
 	}
-	else
-	{
-		printf("%s%s", separator, va_arg(ap, char *));
-	}
 }
 
 va_end(ap);
