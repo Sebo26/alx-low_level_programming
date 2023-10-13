@@ -8,7 +8,6 @@
  * between two numbers.
  * Return: The result of the calculation.
  */
-int main(void)
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-get_op_func();
 }

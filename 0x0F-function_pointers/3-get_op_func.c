@@ -15,4 +15,8 @@ op_t ops[] = {
 	{"%", op_mod},
 	{NULL, NULL}
 };
+int m = 0;
+while(ops[m].op != NULL && *(ops[m].op) != *s)
+m++;
+return (ops[m].f)
 }
