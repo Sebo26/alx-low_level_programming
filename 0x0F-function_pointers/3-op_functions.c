@@ -28,7 +28,7 @@ int op_sub(int a, int b)
  * @b: The number that will be multiplied by a.
  * Return: Product of a and b
  */
-int op_mul(int a, int b);
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
