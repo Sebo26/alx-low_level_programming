@@ -22,13 +22,20 @@ add = malloc(sizeof(list_t));
 		free(add);
 		return (NULL);
 	}
-	add->len = len;
-	add->next == (*head);
+	add->len = strlen(str);
 	if (*head == NULL)
 	{
-		*head == NULL;
+		return (add);
 	}
-}
+	else
+	{
+		list_t *temp = *head;
 
+		while (temp->next != NULL)
+		{
+			temp = temp->next;
+		}
+		temp->next = add;
+	}
 return (*head);
 }
