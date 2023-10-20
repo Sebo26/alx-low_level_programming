@@ -20,9 +20,9 @@ while (h != NULL)
 	else
 	{
 		printf("[%u] %s\n", h->len, h->str);
-		h = h->next;
-		i++;
 	}
+h = h->next;
+i++;
 }
 return (i);
 }
