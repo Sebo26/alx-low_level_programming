@@ -13,6 +13,9 @@ if (h == NULL)
 {
 	return (0);
 }
+else
+{
 printf("%d\n", h->n);
-return (1) + print_listint(h->next);
+return ((1) + print_listint(h->next));
+}
 }
