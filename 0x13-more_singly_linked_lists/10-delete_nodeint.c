@@ -10,20 +10,33 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-listint_t *to_remove = *head;
 listint_t *curr = *head;
+listint_t *prev = NULL;
+unsigned int i = 0;
 if (*head == NULL)
 {
 	return (-1);
 }
 
-for (curr = *head; curr->next == index; curr = curr->next)
+if (index == 0)
 {
-	if (curr->next->n = n)
-	{
-		*head = (*head)->next;
-		free(to_remove);
-	}
+	listint_t *to_remove = *head;
+	*head = (*head)->next;
+	free(to_remove);
+	return (1);
 }
-return (1);
+
+while (curr != NULL)
+{
+	if (i == index)
+	{
+		prev->next = curr->next;
+		free(curr);
+		return (1);
+	}
+	prev = curr;
+	curr = curr->next;
+	i++;
+}
+return (-1);
 }
