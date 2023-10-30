@@ -27,10 +27,10 @@ if (file_pointer == NULL)
 }
 
 while ((c = fgetc(file_pointer)) != EOF && letters > 0)
-{       
-	_putchar(c);
+{
+	putchar(c);
 	letters--;
 }
 fclose(file_pointer);
-return((letters == 0) ? 0 : letters);
+return (letters);
 }
