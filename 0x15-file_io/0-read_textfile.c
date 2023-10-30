@@ -10,7 +10,7 @@
  * Return: 0 (if file cannot open or read, filename is NULL, or write fail
  * or doesn't write the correct letters) OR the number of characters printed.
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+size_t read_textfile(const char *filename, size_t letters)
 {
 char c;
 FILE *file_pointer;
@@ -32,5 +32,5 @@ while ((c = fgetc(file_pointer)) != EOF && letters > 0)
 	letters--;
 }
 fclose(file_pointer);
-return(letters == 0) ? 0: letters;
+return((letters == 0) ? 0 : letters);
 }
