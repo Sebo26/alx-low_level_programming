@@ -15,37 +15,42 @@ int p_from;
 int p_to;
 char buffer[BUFFER_SIZE];
 ssize_t bytes_read, bytes_written;
-const char *file_from = "source_file.txt";
-const char *file_to = "destination_file.txt";
 
 if (argc != 3)
 {
-	printf("Usage: cp file_from file_to");
-	exit (97);
+	dprintf(2, "Usage: %s cp file_from file_to\n", argv[0]);
+	exit(97);
 }
 
-p_from = open(file_from, O_RDONLY);
+p_from = open(argv[1], O_RDONLY);
 if (p_from == -1)
 {
-	dprintf(argv[2], "Error: Can't read from file NAME_OF_THE_FILE\n");
-	exit (98);
+	dprintf(2, "Error: Can't read from file NAME_OF_THE_FILE%s\n", argv[1]);
+	exit(98);
 }
 
-p_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+p_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 if (p_to == -1)
 {
-	dprintf(argv[2], "Error: Can't write to NAME_OF_THE_FILE\n");
-	exit (99);
+	dprintf(2, "Error: Can't write to NAME_OF_THE_FILE%s\n", argv[2]);
+	close(p_from);
+	exit(99);
 }
 
 while ((bytes_read = read(p_from, buffer, BUFFER_SIZE)) > 0)
 {
 	bytes_written = write(p_to, buffer, bytes_read);
+	if (bytes_written != bytes_read)
+	{
+		dprintf(2, "Error writing to file %s\n", argv[2]);
+		close(p_from);
+		close(p_to);
+		exit(99);
+	}
 }
-
 if (close(p_from) == -1 || close(p_to) == -1)
 {
-	dprintf(argv[2], "Error: Can't close fd FD_VALUE\n");
+	dprintf(2, "Error: Can't close fd %s\n", argv[2]);
 	exit(100);
 }
 
