@@ -14,5 +14,5 @@ while (curr != NULL)
 	curr = curr->next;
 	free(aux);
 }
-root - NULL;
+*root = NULL;
 }
