@@ -12,7 +12,8 @@ int sum;
 sum = 0;
 for (i = 0; head != NULL; i++)
 {
-	sum = sum + head;
+	sum = sum + head->n;
 	head = head->next;
 }
+return (sum);
 }
