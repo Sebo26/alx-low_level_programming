@@ -7,7 +7,7 @@
  */
 int add(int m, int n)
 {
-	return (m + n);
+	return ((m) + (n));
 }
 
 /**
@@ -18,7 +18,7 @@ int add(int m, int n)
  */
 int sub(int m, int n)
 {
-	return (m - n);
+	return ((m) - (n));
 }
 
 /**
@@ -29,7 +29,7 @@ int sub(int m, int n)
  */
 int divide(int m, int n)
 {
-	return (m / n);
+	return ((m) / (n));
 }
 
 /**
@@ -40,7 +40,7 @@ int divide(int m, int n)
  */
 int mod(int m, int n)
 {
-	return (m % n);
+	return ((m) % (n));
 }
 /**
  * mul - adds two numbers
@@ -50,5 +50,5 @@ int mod(int m, int n)
  */
 int mul(int m, int n)
 {
-	return (m * n);
+	return ((m) * (n));
 }
