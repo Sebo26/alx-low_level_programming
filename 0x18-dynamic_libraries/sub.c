@@ -1,5 +1,3 @@
-#include <stdlib.h>
-
 /**
  * sub - subtracts two numbers
  * @m: first number
@@ -8,5 +6,5 @@
  */
 int sub(int m, int n)
 {
-	return (m - n);
+	return ((m) - (n));
 }

@@ -8,5 +8,5 @@
  */
 int divide(int m, int n)
 {
-	return (m / n);
+	return ((m) / (n));
 }
