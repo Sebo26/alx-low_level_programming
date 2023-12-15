@@ -6,7 +6,7 @@
  * @n: second number
  * Return: difference
  */
-int add(int m, int n)
+int sub(int m, int n)
 {
 	return (m - n);
 }
