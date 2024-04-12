@@ -24,7 +24,7 @@ int binary_search(int *array, size_t size, int value)
 	while (left <= right)
 	{
 		middle = left + (right - left) / 2;
-
+		printf("Value checked array[%u] = [%d]\n", middle, array[middle]);
 		if (array[middle] == value)
 		{
 			return (middle);
