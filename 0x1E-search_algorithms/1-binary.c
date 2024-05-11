@@ -19,7 +19,6 @@ int binary_search(int *array, size_t size, int value)
 
 	if (array == NULL)
 	{
-		printf("Value checked array[%u] = [%s]\n", 0, "NULL");
 		return (-1);
 	}
 
