@@ -48,6 +48,10 @@ int binary_search(int *array, size_t size, int value)
 		{
 			right = middle - 1;
 		}
+		if (size > 16)
+		{
+			printf("Searching in array:");
+		}
 	}
 	return (-1);
 }
